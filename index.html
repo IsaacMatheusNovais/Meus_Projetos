@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício Form Isaac M.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+     crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+    <form class="formulario">
+        <div class="digitaveis">
+            <label>Nome</label><br>
+            <input type="text">
+            <br>
+
+            <label>Email</label><br>
+            <input type="text">
+            <br>
+
+            <label>Idade</label><br>
+            <input type="text">
+            <br>
+
+            <label>Área de Atuação</label><br>
+                <select>
+                    <option disabled selected>Selecione</option>
+                    <option>Administração</option>
+                    <option>Tecnologia</option>
+                    <option>Recursos Humanos</option>
+                    <option>Marketing</option>
+                    <option>Vendas</option>
+                </select>
+            <br>
+        </div>
+        <!--Checkboxes do estado civil, propriedade NAME serve para permitir
+            apenas a seleção de uma opção por vez-->
+        <div class="estado">
+            <label>Estado Civíl</label><br>
+                <label for="solteiro"><input type="radio" id="solteiro" name="estado_civil" checked> Solteiro(a)</input type="radio"></label><br>
+                <label for="casado"><input type="radio" id="casado" name="estado_civil"> Casado(a)</input type="radio"></label><br>
+                <label for="divorciado"><input type="radio" id="divorciado" name="estado_civil"> Divorciado(a)</input type="radio"></label><br>
+                <label for="viuvo"><input type="radio" id="viuvo" name="estado_civil"> Viuvo(a)</input type="radio"></label><br>
+                <label for="uniao_estavel"><input type="radio" id="uniao_estavel" name="estado_civil"> União estável</input type="radio"></label><br>
+        </div>
+        <label>Nível de Escolaridade</label><br>
+        <select id="nivel">
+            <option disabled selected>Selecione</option>
+            <option>Ensino Fundamental Incompleto</option>
+            <option>Ensino Fundamental Completo</option>
+            <option>Técnico</option>
+            <option>Cursando Ensino Superior</option>
+            <option>Ensino Superior Completo</option>
+        </select><br>
+        <div class="Dispo">
+            <label>Disponibilidade de períodos</label><br>
+            <label for="matutino"><input type="checkbox" id="matutino"> Matutino</input></label><br>
+            <label for="vespertino"><input type="checkbox" id="vespertino"> Vespertino</input></label><br>
+            <label for="noturno"><input type="checkbox" id="noturno"></input> Noturno</label><br>
+            <label for="fim_de_semana"><input type="checkbox" id="fim_de_semana"> Fins de Semana</input></label><br>
+        </div>
+        <label>Sobre Você</label><br>
+        <textarea placeholder="Escreva um pouco sobre você" id="sobrevc"></textarea>
+        <button type="button" class="btn btn-info" id="botao">Enviar</button>
+    </form>
+    
+</body>
+</html>

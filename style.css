@@ -1,0 +1,75 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    background-image: url("back_img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+    margin-top: 10%;
+    border-radius: 15px;
+    background-color: rgba(9,69,108, 0.6);
+}
+
+.digitaveis input {
+    margin-bottom: 7px;
+    width: 425px;
+    height: 27px;
+}
+
+.digitaveis select {
+    border: none;
+    width: 425px;
+    margin-bottom: 7px;
+    height: 27px;
+}  
+
+.estado{
+    margin-bottom: 7px;
+}
+
+#nivel{
+    margin-bottom: 7px;
+    width: 425px;
+    height: 27px;
+}
+
+.Dispo{
+    margin-bottom: 7px;
+}
+#sobrevc{
+    width: 423px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+#botao{
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+    left: 49.75%;
+    transform: translate(-50%);
+    width: 422px;
+}
+
+::-webkit-scrollbar{
+    width: 18px;
+}
+::-webkit-scrollbar-track{
+    background-color: #1c3166;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #00a9d4;
+}
